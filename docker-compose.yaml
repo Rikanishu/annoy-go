@@ -1,0 +1,8 @@
+version: '3'
+services:
+  stage:
+    image: "golang:1.18.3"
+    command: "go run /app/cmd/example-ang-membench/"
+    working_dir: /app/
+    volumes:
+      - ./:/app/
