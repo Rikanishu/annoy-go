@@ -114,6 +114,8 @@ class AnnoyIndex {
 
     out_result->fill_from_vector(result);
     out_distances->fill_from_vector(distances);
+    delete result;
+    delete distances;
   };
   void getNnsByVector(const float* w, int n, int search_k, AnnoyVectorInt* out_result, AnnoyVectorFloat* out_distances) {
     vector<int32_t>* result = new vector<int32_t>();
@@ -123,6 +125,8 @@ class AnnoyIndex {
 
     out_result->fill_from_vector(result);
     out_distances->fill_from_vector(distances);
+    delete result;
+    delete distances;
   };
   void getNnsByItem(int item, int n, int search_k, AnnoyVectorInt* out_result) {
     vector<int32_t>* result = new vector<int32_t>();
@@ -130,6 +134,7 @@ class AnnoyIndex {
     ptr->get_nns_by_item(item, n, search_k, result, NULL);
 
     out_result->fill_from_vector(result);
+    delete result;
   };
   void getNnsByVector(const float* w, int n, int search_k, AnnoyVectorInt* out_result) {
     vector<int32_t>* result = new vector<int32_t>();
@@ -137,6 +142,7 @@ class AnnoyIndex {
     ptr->get_nns_by_vector(w, n, search_k, result, NULL);
 
     out_result->fill_from_vector(result);
+    delete result;
   };
 
   int getNItems() {
