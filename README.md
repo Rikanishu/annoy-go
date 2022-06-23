@@ -3,9 +3,9 @@
 
 This is a forked version with fixed memory leaks.
 
-Please note, it changes the interface, new wrappers for vectors were added.
-Do not reuse _AnnoyVectorInt_ / _AnnoyVectorFloat_ in different threads since it's not thread safe.
-Also note that indexes will be kept as int32, so keep in mind there is a count limit for items.
+* Please note, it changes the interface, new wrappers for vectors were added.
+* Do not reuse _AnnoyVectorInt_ / _AnnoyVectorFloat_ in different threads since it's not thread safe.
+* Also note that indexes will be kept as int32, so keep in mind there is a count limit for items.
 
 __Go code example__
 
