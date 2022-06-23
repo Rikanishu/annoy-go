@@ -4,6 +4,8 @@
 This is a forked version with fixed memory leaks.
 
 Please note, it changes the interface, new wrappers for vectors were added.
+Do not reuse _AnnoyVectorInt_ / _AnnoyVectorFloat_ in different threads since it's not thread safe.
+Also note that indexes will be kept as int32, so keep in mind there is a count limit for items.
 
 __Go code example__
 
@@ -33,9 +35,9 @@ func main() {
 
      t = annoyindex.NewAnnoyIndexAngular(f)
      t.Load("test.ann")
-
-	 result := annoyindex.NewAnnoyVectorInt()
-	 defer result.Free()
+	 
+     result := annoyindex.NewAnnoyVectorInt()
+     defer result.Free()
      t.GetNnsByItem(0, 1000, -1, result)
      fmt.Printf("%v\n", result.ToSlice())
 }

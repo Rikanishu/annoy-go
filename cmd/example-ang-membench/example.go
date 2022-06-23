@@ -34,13 +34,11 @@ func main() {
 	result := annoy.NewAnnoyVectorInt()
 	defer result.Free()
 	for i := 0; i < 100000; i++ {
-		result = annoy.NewAnnoyVectorInt()
 		searchVector := make([]float32, 100)
 		for j := 0; j < len(searchVector); j++ {
 			searchVector[j] = rand.Float32()
 		}
 		t.GetNnsByVector(searchVector, 1000, -1, result)
-		result.Free()
 
 		if i%10000 == 0 {
 			utils.DebugPrintStats()
