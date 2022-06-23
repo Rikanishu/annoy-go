@@ -8,9 +8,9 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-// source: src/annoygomodule.i
+// source: ./annoygomodule.i
 
-package annoy
+package annoyindex
 
 /*
 #define intgo swig_intgo
@@ -44,98 +44,108 @@ typedef _gostring_ swig_type_13;
 typedef _goslice_ swig_type_14;
 typedef _goslice_ swig_type_15;
 typedef _gostring_ swig_type_16;
-extern void _wrap_Swig_free_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern uintptr_t _wrap_Swig_malloc_annoyindex_2832eef9f6555f92(swig_intgo arg1);
-extern void _wrap_delete_AnnoyIndex_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern void _wrap_AnnoyIndex_addItem_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_intgo arg2, swig_type_1 arg3);
-extern void _wrap_AnnoyIndex_build_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_intgo arg2);
-extern _Bool _wrap_AnnoyIndex_save__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_type_2 arg2, _Bool arg3);
-extern _Bool _wrap_AnnoyIndex_save__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_type_3 arg2);
-extern void _wrap_AnnoyIndex_unload_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern _Bool _wrap_AnnoyIndex_load__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_type_4 arg2, _Bool arg3);
-extern _Bool _wrap_AnnoyIndex_load__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_type_5 arg2);
-extern float _wrap_AnnoyIndex_getDistance_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_intgo arg2, swig_intgo arg3);
-extern void _wrap_AnnoyIndex_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_intgo arg2, swig_intgo arg3, swig_intgo arg4, swig_voidp arg5, swig_voidp arg6);
-extern void _wrap_AnnoyIndex_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_type_6 arg2, swig_intgo arg3, swig_intgo arg4, swig_voidp arg5, swig_voidp arg6);
-extern void _wrap_AnnoyIndex_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_intgo arg2, swig_intgo arg3, swig_intgo arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndex_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_type_7 arg2, swig_intgo arg3, swig_intgo arg4, swig_voidp arg5);
-extern swig_intgo _wrap_AnnoyIndex_getNItems_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern void _wrap_AnnoyIndex_verbose_annoyindex_2832eef9f6555f92(uintptr_t arg1, _Bool arg2);
-extern void _wrap_AnnoyIndex_getItem_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_intgo arg2, swig_voidp arg3);
-extern _Bool _wrap_AnnoyIndex_onDiskBuild_annoyindex_2832eef9f6555f92(uintptr_t arg1, swig_type_8 arg2);
-extern uintptr_t _wrap_new_AnnoyIndex_annoyindex_2832eef9f6555f92(void);
-extern uintptr_t _wrap_new_AnnoyIndexAngular_annoyindex_2832eef9f6555f92(swig_intgo arg1);
-extern void _wrap_delete_AnnoyIndexAngular_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern void _wrap_AnnoyIndexAngular_addItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
-extern void _wrap_AnnoyIndexAngular_build_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1);
-extern _Bool _wrap_AnnoyIndexAngular_save__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexAngular_save__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_11 arg1);
-extern void _wrap_AnnoyIndexAngular_unload_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern _Bool _wrap_AnnoyIndexAngular_load__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexAngular_load__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_13 arg1);
-extern float _wrap_AnnoyIndexAngular_getDistance_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
-extern void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern swig_intgo _wrap_AnnoyIndexAngular_getNItems_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern void _wrap_AnnoyIndexAngular_verbose_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, _Bool arg1);
-extern void _wrap_AnnoyIndexAngular_getItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_voidp arg2);
-extern _Bool _wrap_AnnoyIndexAngular_onDiskBuild_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_16 arg1);
-extern uintptr_t _wrap_new_AnnoyIndexEuclidean_annoyindex_2832eef9f6555f92(swig_intgo arg1);
-extern void _wrap_delete_AnnoyIndexEuclidean_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern void _wrap_AnnoyIndexEuclidean_addItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
-extern void _wrap_AnnoyIndexEuclidean_build_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1);
-extern _Bool _wrap_AnnoyIndexEuclidean_save__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexEuclidean_save__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_11 arg1);
-extern void _wrap_AnnoyIndexEuclidean_unload_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern _Bool _wrap_AnnoyIndexEuclidean_load__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexEuclidean_load__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_13 arg1);
-extern float _wrap_AnnoyIndexEuclidean_getDistance_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
-extern void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern swig_intgo _wrap_AnnoyIndexEuclidean_getNItems_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern void _wrap_AnnoyIndexEuclidean_verbose_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, _Bool arg1);
-extern void _wrap_AnnoyIndexEuclidean_getItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_voidp arg2);
-extern _Bool _wrap_AnnoyIndexEuclidean_onDiskBuild_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_16 arg1);
-extern uintptr_t _wrap_new_AnnoyIndexManhattan_annoyindex_2832eef9f6555f92(swig_intgo arg1);
-extern void _wrap_delete_AnnoyIndexManhattan_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern void _wrap_AnnoyIndexManhattan_addItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
-extern void _wrap_AnnoyIndexManhattan_build_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1);
-extern _Bool _wrap_AnnoyIndexManhattan_save__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexManhattan_save__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_11 arg1);
-extern void _wrap_AnnoyIndexManhattan_unload_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern _Bool _wrap_AnnoyIndexManhattan_load__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexManhattan_load__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_13 arg1);
-extern float _wrap_AnnoyIndexManhattan_getDistance_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
-extern void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern swig_intgo _wrap_AnnoyIndexManhattan_getNItems_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern void _wrap_AnnoyIndexManhattan_verbose_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, _Bool arg1);
-extern void _wrap_AnnoyIndexManhattan_getItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_voidp arg2);
-extern _Bool _wrap_AnnoyIndexManhattan_onDiskBuild_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_16 arg1);
-extern uintptr_t _wrap_new_AnnoyIndexDotProduct_annoyindex_2832eef9f6555f92(swig_intgo arg1);
-extern void _wrap_delete_AnnoyIndexDotProduct_annoyindex_2832eef9f6555f92(uintptr_t arg1);
-extern void _wrap_AnnoyIndexDotProduct_addItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
-extern void _wrap_AnnoyIndexDotProduct_build_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1);
-extern _Bool _wrap_AnnoyIndexDotProduct_save__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexDotProduct_save__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_11 arg1);
-extern void _wrap_AnnoyIndexDotProduct_unload_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern _Bool _wrap_AnnoyIndexDotProduct_load__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
-extern _Bool _wrap_AnnoyIndexDotProduct_load__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_13 arg1);
-extern float _wrap_AnnoyIndexDotProduct_getDistance_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
-extern void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4, swig_voidp arg5);
-extern void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, swig_voidp arg4);
-extern swig_intgo _wrap_AnnoyIndexDotProduct_getNItems_annoyindex_2832eef9f6555f92(uintptr_t _swig_base);
-extern void _wrap_AnnoyIndexDotProduct_verbose_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, _Bool arg1);
-extern void _wrap_AnnoyIndexDotProduct_getItem_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_intgo arg1, swig_voidp arg2);
-extern _Bool _wrap_AnnoyIndexDotProduct_onDiskBuild_annoyindex_2832eef9f6555f92(uintptr_t _swig_base, swig_type_16 arg1);
+extern void _wrap_Swig_free_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern uintptr_t _wrap_Swig_malloc_annoyindex_201a99b593aced55(swig_intgo arg1);
+extern void _wrap_delete_X_RawAnnoyVectorFloat_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern swig_voidp _wrap_X_RawAnnoyVectorFloat_ArrayPtr_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern swig_intgo _wrap_X_RawAnnoyVectorFloat_Len_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern float _wrap_X_RawAnnoyVectorFloat_Get_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2);
+extern uintptr_t _wrap_new_X_RawAnnoyVectorFloat_annoyindex_201a99b593aced55(void);
+extern void _wrap_delete_X_RawAnnoyVectorInt_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern swig_voidp _wrap_X_RawAnnoyVectorInt_ArrayPtr_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern swig_intgo _wrap_X_RawAnnoyVectorInt_Len_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern int _wrap_X_RawAnnoyVectorInt_Get_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2);
+extern uintptr_t _wrap_new_X_RawAnnoyVectorInt_annoyindex_201a99b593aced55(void);
+extern void _wrap_delete_AnnoyIndex_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern void _wrap_AnnoyIndex_addItem_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2, swig_type_1 arg3);
+extern void _wrap_AnnoyIndex_build_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2);
+extern _Bool _wrap_AnnoyIndex_save__SWIG_0_annoyindex_201a99b593aced55(uintptr_t arg1, swig_type_2 arg2, _Bool arg3);
+extern _Bool _wrap_AnnoyIndex_save__SWIG_1_annoyindex_201a99b593aced55(uintptr_t arg1, swig_type_3 arg2);
+extern void _wrap_AnnoyIndex_unload_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern _Bool _wrap_AnnoyIndex_load__SWIG_0_annoyindex_201a99b593aced55(uintptr_t arg1, swig_type_4 arg2, _Bool arg3);
+extern _Bool _wrap_AnnoyIndex_load__SWIG_1_annoyindex_201a99b593aced55(uintptr_t arg1, swig_type_5 arg2);
+extern float _wrap_AnnoyIndex_getDistance_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2, swig_intgo arg3);
+extern void _wrap_AnnoyIndex_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2, swig_intgo arg3, swig_intgo arg4, uintptr_t arg5, uintptr_t arg6);
+extern void _wrap_AnnoyIndex_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(uintptr_t arg1, swig_type_6 arg2, swig_intgo arg3, swig_intgo arg4, uintptr_t arg5, uintptr_t arg6);
+extern void _wrap_AnnoyIndex_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2, swig_intgo arg3, swig_intgo arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndex_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(uintptr_t arg1, swig_type_7 arg2, swig_intgo arg3, swig_intgo arg4, uintptr_t arg5);
+extern swig_intgo _wrap_AnnoyIndex_getNItems_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern void _wrap_AnnoyIndex_verbose_annoyindex_201a99b593aced55(uintptr_t arg1, _Bool arg2);
+extern void _wrap_AnnoyIndex_getItem_annoyindex_201a99b593aced55(uintptr_t arg1, swig_intgo arg2, uintptr_t arg3);
+extern _Bool _wrap_AnnoyIndex_onDiskBuild_annoyindex_201a99b593aced55(uintptr_t arg1, swig_type_8 arg2);
+extern uintptr_t _wrap_new_AnnoyIndex_annoyindex_201a99b593aced55(void);
+extern uintptr_t _wrap_new_AnnoyIndexAngular_annoyindex_201a99b593aced55(swig_intgo arg1);
+extern void _wrap_delete_AnnoyIndexAngular_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern void _wrap_AnnoyIndexAngular_addItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
+extern void _wrap_AnnoyIndexAngular_build_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1);
+extern _Bool _wrap_AnnoyIndexAngular_save__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexAngular_save__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_11 arg1);
+extern void _wrap_AnnoyIndexAngular_unload_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern _Bool _wrap_AnnoyIndexAngular_load__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexAngular_load__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_13 arg1);
+extern float _wrap_AnnoyIndexAngular_getDistance_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
+extern void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern swig_intgo _wrap_AnnoyIndexAngular_getNItems_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern void _wrap_AnnoyIndexAngular_verbose_annoyindex_201a99b593aced55(uintptr_t _swig_base, _Bool arg1);
+extern void _wrap_AnnoyIndexAngular_getItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, uintptr_t arg2);
+extern _Bool _wrap_AnnoyIndexAngular_onDiskBuild_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_16 arg1);
+extern uintptr_t _wrap_new_AnnoyIndexEuclidean_annoyindex_201a99b593aced55(swig_intgo arg1);
+extern void _wrap_delete_AnnoyIndexEuclidean_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern void _wrap_AnnoyIndexEuclidean_addItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
+extern void _wrap_AnnoyIndexEuclidean_build_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1);
+extern _Bool _wrap_AnnoyIndexEuclidean_save__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexEuclidean_save__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_11 arg1);
+extern void _wrap_AnnoyIndexEuclidean_unload_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern _Bool _wrap_AnnoyIndexEuclidean_load__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexEuclidean_load__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_13 arg1);
+extern float _wrap_AnnoyIndexEuclidean_getDistance_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
+extern void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern swig_intgo _wrap_AnnoyIndexEuclidean_getNItems_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern void _wrap_AnnoyIndexEuclidean_verbose_annoyindex_201a99b593aced55(uintptr_t _swig_base, _Bool arg1);
+extern void _wrap_AnnoyIndexEuclidean_getItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, uintptr_t arg2);
+extern _Bool _wrap_AnnoyIndexEuclidean_onDiskBuild_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_16 arg1);
+extern uintptr_t _wrap_new_AnnoyIndexManhattan_annoyindex_201a99b593aced55(swig_intgo arg1);
+extern void _wrap_delete_AnnoyIndexManhattan_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern void _wrap_AnnoyIndexManhattan_addItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
+extern void _wrap_AnnoyIndexManhattan_build_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1);
+extern _Bool _wrap_AnnoyIndexManhattan_save__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexManhattan_save__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_11 arg1);
+extern void _wrap_AnnoyIndexManhattan_unload_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern _Bool _wrap_AnnoyIndexManhattan_load__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexManhattan_load__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_13 arg1);
+extern float _wrap_AnnoyIndexManhattan_getDistance_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
+extern void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern swig_intgo _wrap_AnnoyIndexManhattan_getNItems_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern void _wrap_AnnoyIndexManhattan_verbose_annoyindex_201a99b593aced55(uintptr_t _swig_base, _Bool arg1);
+extern void _wrap_AnnoyIndexManhattan_getItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, uintptr_t arg2);
+extern _Bool _wrap_AnnoyIndexManhattan_onDiskBuild_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_16 arg1);
+extern uintptr_t _wrap_new_AnnoyIndexDotProduct_annoyindex_201a99b593aced55(swig_intgo arg1);
+extern void _wrap_delete_AnnoyIndexDotProduct_annoyindex_201a99b593aced55(uintptr_t arg1);
+extern void _wrap_AnnoyIndexDotProduct_addItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_type_9 arg2);
+extern void _wrap_AnnoyIndexDotProduct_build_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1);
+extern _Bool _wrap_AnnoyIndexDotProduct_save__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_10 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexDotProduct_save__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_11 arg1);
+extern void _wrap_AnnoyIndexDotProduct_unload_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern _Bool _wrap_AnnoyIndexDotProduct_load__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_12 arg1, _Bool arg2);
+extern _Bool _wrap_AnnoyIndexDotProduct_load__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_13 arg1);
+extern float _wrap_AnnoyIndexDotProduct_getDistance_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2);
+extern void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_14 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4, uintptr_t arg5);
+extern void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_15 arg1, swig_intgo arg2, swig_intgo arg3, uintptr_t arg4);
+extern swig_intgo _wrap_AnnoyIndexDotProduct_getNItems_annoyindex_201a99b593aced55(uintptr_t _swig_base);
+extern void _wrap_AnnoyIndexDotProduct_verbose_annoyindex_201a99b593aced55(uintptr_t _swig_base, _Bool arg1);
+extern void _wrap_AnnoyIndexDotProduct_getItem_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_intgo arg1, uintptr_t arg2);
+extern _Bool _wrap_AnnoyIndexDotProduct_onDiskBuild_annoyindex_201a99b593aced55(uintptr_t _swig_base, swig_type_16 arg1);
 #undef intgo
 */
 import "C"
@@ -156,14 +166,202 @@ type _ sync.Mutex
 
 func Swig_free(arg1 uintptr) {
 	_swig_i_0 := arg1
-	C._wrap_Swig_free_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0))
+	C._wrap_Swig_free_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
 }
 
 func Swig_malloc(arg1 int) (_swig_ret uintptr) {
 	var swig_r uintptr
 	_swig_i_0 := arg1
-	swig_r = (uintptr)(C._wrap_Swig_malloc_annoyindex_2832eef9f6555f92(C.swig_intgo(_swig_i_0)))
+	swig_r = (uintptr)(C._wrap_Swig_malloc_annoyindex_201a99b593aced55(C.swig_intgo(_swig_i_0)))
 	return swig_r
+}
+
+type AnnoyVectorInt interface {
+	X_RawAnnoyVectorInt
+	ToSlice() []int32
+	Copy(in *[]int32)
+	InnerArray() []int32
+	Free()
+}
+
+func NewAnnoyVectorInt() AnnoyVectorInt {
+	vec := NewX_RawAnnoyVectorInt()
+	return vec.(SwigcptrX_RawAnnoyVectorInt)
+}
+
+func (p SwigcptrX_RawAnnoyVectorInt) ToSlice() []int32 {
+	var out []int32
+	p.Copy(&out)
+	return out
+}
+
+func (p SwigcptrX_RawAnnoyVectorInt) Copy(in *[]int32) {
+	out := *in
+	inner := p.InnerArray()
+	if cap(out) >= len(inner) {
+		if len(out) != len(inner) {
+			out = out[:len(inner)]
+		}
+	} else {
+		out = make([]int32, len(inner))
+	}
+
+	copy(out, inner)
+	*in = out
+}
+
+func (p SwigcptrX_RawAnnoyVectorInt) Free() {
+	DeleteX_RawAnnoyVectorInt(p)
+}
+
+func (p SwigcptrX_RawAnnoyVectorInt) InnerArray() []int32 {
+	length := p.Len()
+	ptr := unsafe.Pointer(p.ArrayPtr())
+	return ((*[1 << 30]int32)(ptr))[:length:length]
+}
+
+type AnnoyVectorFloat interface {
+	X_RawAnnoyVectorFloat
+	ToSlice() []float32
+	Copy(in *[]float32)
+	InnerArray() []float32
+	Free()
+}
+
+func NewAnnoyVectorFloat() AnnoyVectorFloat {
+	vec := NewX_RawAnnoyVectorFloat()
+	return vec.(SwigcptrX_RawAnnoyVectorFloat)
+}
+
+func (p SwigcptrX_RawAnnoyVectorFloat) ToSlice() []float32 {
+	var out []float32
+	p.Copy(&out)
+	return out
+}
+
+func (p SwigcptrX_RawAnnoyVectorFloat) Copy(in *[]float32) {
+	out := *in
+	inner := p.InnerArray()
+	if cap(out) >= len(inner) {
+		if len(out) != len(inner) {
+			out = out[:len(inner)]
+		}
+	} else {
+		out = make([]float32, len(inner))
+	}
+
+	copy(out, inner)
+	*in = out
+}
+
+func (p SwigcptrX_RawAnnoyVectorFloat) Free() {
+	DeleteX_RawAnnoyVectorFloat(p)
+}
+
+func (p SwigcptrX_RawAnnoyVectorFloat) InnerArray() []float32 {
+	length := p.Len()
+	ptr := unsafe.Pointer(p.ArrayPtr())
+	return ((*[1 << 30]float32)(ptr))[:length:length]
+}
+
+type SwigcptrX_RawAnnoyVectorFloat uintptr
+
+func (p SwigcptrX_RawAnnoyVectorFloat) Swigcptr() uintptr {
+	return (uintptr)(p)
+}
+
+func (p SwigcptrX_RawAnnoyVectorFloat) SwigIsX_RawAnnoyVectorFloat() {
+}
+
+func DeleteX_RawAnnoyVectorFloat(arg1 X_RawAnnoyVectorFloat) {
+	_swig_i_0 := arg1.Swigcptr()
+	C._wrap_delete_X_RawAnnoyVectorFloat_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
+}
+
+func (arg1 SwigcptrX_RawAnnoyVectorFloat) ArrayPtr() (_swig_ret *float32) {
+	var swig_r *float32
+	_swig_i_0 := arg1
+	swig_r = (*float32)(C._wrap_X_RawAnnoyVectorFloat_ArrayPtr_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0)))
+	return swig_r
+}
+
+func (arg1 SwigcptrX_RawAnnoyVectorFloat) Len() (_swig_ret int) {
+	var swig_r int
+	_swig_i_0 := arg1
+	swig_r = (int)(C._wrap_X_RawAnnoyVectorFloat_Len_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0)))
+	return swig_r
+}
+
+func (arg1 SwigcptrX_RawAnnoyVectorFloat) Get(arg2 int) (_swig_ret float32) {
+	var swig_r float32
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	swig_r = (float32)(C._wrap_X_RawAnnoyVectorFloat_Get_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1)))
+	return swig_r
+}
+
+func NewX_RawAnnoyVectorFloat() (_swig_ret X_RawAnnoyVectorFloat) {
+	var swig_r X_RawAnnoyVectorFloat
+	swig_r = (X_RawAnnoyVectorFloat)(SwigcptrX_RawAnnoyVectorFloat(C._wrap_new_X_RawAnnoyVectorFloat_annoyindex_201a99b593aced55()))
+	return swig_r
+}
+
+type X_RawAnnoyVectorFloat interface {
+	Swigcptr() uintptr
+	SwigIsX_RawAnnoyVectorFloat()
+	ArrayPtr() (_swig_ret *float32)
+	Len() (_swig_ret int)
+	Get(arg2 int) (_swig_ret float32)
+}
+
+type SwigcptrX_RawAnnoyVectorInt uintptr
+
+func (p SwigcptrX_RawAnnoyVectorInt) Swigcptr() uintptr {
+	return (uintptr)(p)
+}
+
+func (p SwigcptrX_RawAnnoyVectorInt) SwigIsX_RawAnnoyVectorInt() {
+}
+
+func DeleteX_RawAnnoyVectorInt(arg1 X_RawAnnoyVectorInt) {
+	_swig_i_0 := arg1.Swigcptr()
+	C._wrap_delete_X_RawAnnoyVectorInt_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
+}
+
+func (arg1 SwigcptrX_RawAnnoyVectorInt) ArrayPtr() (_swig_ret *int32) {
+	var swig_r *int32
+	_swig_i_0 := arg1
+	swig_r = (*int32)(C._wrap_X_RawAnnoyVectorInt_ArrayPtr_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0)))
+	return swig_r
+}
+
+func (arg1 SwigcptrX_RawAnnoyVectorInt) Len() (_swig_ret int) {
+	var swig_r int
+	_swig_i_0 := arg1
+	swig_r = (int)(C._wrap_X_RawAnnoyVectorInt_Len_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0)))
+	return swig_r
+}
+
+func (arg1 SwigcptrX_RawAnnoyVectorInt) Get(arg2 int) (_swig_ret int32) {
+	var swig_r int32
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	swig_r = (int32)(C._wrap_X_RawAnnoyVectorInt_Get_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1)))
+	return swig_r
+}
+
+func NewX_RawAnnoyVectorInt() (_swig_ret X_RawAnnoyVectorInt) {
+	var swig_r X_RawAnnoyVectorInt
+	swig_r = (X_RawAnnoyVectorInt)(SwigcptrX_RawAnnoyVectorInt(C._wrap_new_X_RawAnnoyVectorInt_annoyindex_201a99b593aced55()))
+	return swig_r
+}
+
+type X_RawAnnoyVectorInt interface {
+	Swigcptr() uintptr
+	SwigIsX_RawAnnoyVectorInt()
+	ArrayPtr() (_swig_ret *int32)
+	Len() (_swig_ret int)
+	Get(arg2 int) (_swig_ret int32)
 }
 
 type SwigcptrAnnoyIndex uintptr
@@ -177,14 +375,14 @@ func (p SwigcptrAnnoyIndex) SwigIsAnnoyIndex() {
 
 func DeleteAnnoyIndex(arg1 AnnoyIndex) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_AnnoyIndex_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_AnnoyIndex_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
 }
 
 func (arg1 SwigcptrAnnoyIndex) AddItem(arg2 int, arg3 []float32) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	C._wrap_AnnoyIndex_addItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), *(*C.swig_type_1)(unsafe.Pointer(&_swig_i_2)))
+	C._wrap_AnnoyIndex_addItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), *(*C.swig_type_1)(unsafe.Pointer(&_swig_i_2)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg3
 	}
@@ -193,7 +391,7 @@ func (arg1 SwigcptrAnnoyIndex) AddItem(arg2 int, arg3 []float32) {
 func (arg1 SwigcptrAnnoyIndex) Build(arg2 int) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_AnnoyIndex_build_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1))
+	C._wrap_AnnoyIndex_build_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1))
 }
 
 func (arg1 SwigcptrAnnoyIndex) Save__SWIG_0(arg2 string, arg3 bool) (_swig_ret bool) {
@@ -201,7 +399,7 @@ func (arg1 SwigcptrAnnoyIndex) Save__SWIG_0(arg2 string, arg3 bool) (_swig_ret b
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	swig_r = (bool)(C._wrap_AnnoyIndex_save__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), *(*C.swig_type_2)(unsafe.Pointer(&_swig_i_1)), C._Bool(_swig_i_2)))
+	swig_r = (bool)(C._wrap_AnnoyIndex_save__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), *(*C.swig_type_2)(unsafe.Pointer(&_swig_i_1)), C._Bool(_swig_i_2)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -212,7 +410,7 @@ func (arg1 SwigcptrAnnoyIndex) Save__SWIG_1(arg2 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndex_save__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), *(*C.swig_type_3)(unsafe.Pointer(&_swig_i_1))))
+	swig_r = (bool)(C._wrap_AnnoyIndex_save__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), *(*C.swig_type_3)(unsafe.Pointer(&_swig_i_1))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -232,7 +430,7 @@ func (p SwigcptrAnnoyIndex) Save(a ...interface{}) bool {
 
 func (arg1 SwigcptrAnnoyIndex) Unload() {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndex_unload_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0))
+	C._wrap_AnnoyIndex_unload_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
 }
 
 func (arg1 SwigcptrAnnoyIndex) Load__SWIG_0(arg2 string, arg3 bool) (_swig_ret bool) {
@@ -240,7 +438,7 @@ func (arg1 SwigcptrAnnoyIndex) Load__SWIG_0(arg2 string, arg3 bool) (_swig_ret b
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	swig_r = (bool)(C._wrap_AnnoyIndex_load__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), *(*C.swig_type_4)(unsafe.Pointer(&_swig_i_1)), C._Bool(_swig_i_2)))
+	swig_r = (bool)(C._wrap_AnnoyIndex_load__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), *(*C.swig_type_4)(unsafe.Pointer(&_swig_i_1)), C._Bool(_swig_i_2)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -251,7 +449,7 @@ func (arg1 SwigcptrAnnoyIndex) Load__SWIG_1(arg2 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndex_load__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), *(*C.swig_type_5)(unsafe.Pointer(&_swig_i_1))))
+	swig_r = (bool)(C._wrap_AnnoyIndex_load__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), *(*C.swig_type_5)(unsafe.Pointer(&_swig_i_1))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -274,62 +472,62 @@ func (arg1 SwigcptrAnnoyIndex) GetDistance(arg2 int, arg3 int) (_swig_ret float3
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	swig_r = (float32)(C._wrap_AnnoyIndex_getDistance_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2)))
+	swig_r = (float32)(C._wrap_AnnoyIndex_getDistance_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2)))
 	return swig_r
 }
 
-func (arg1 SwigcptrAnnoyIndex) GetNnsByItem__SWIG_0(arg2 int, arg3 int, arg4 int, arg5 *[]int, arg6 *[]float32) {
+func (arg1 SwigcptrAnnoyIndex) GetNnsByItem__SWIG_0(arg2 int, arg3 int, arg4 int, arg5 X_RawAnnoyVectorInt, arg6 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	_swig_i_5 := arg6
-	C._wrap_AnnoyIndex_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.swig_voidp(_swig_i_4), C.swig_voidp(_swig_i_5))
+	_swig_i_4 := arg5.Swigcptr()
+	_swig_i_5 := arg6.Swigcptr()
+	C._wrap_AnnoyIndex_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.uintptr_t(_swig_i_4), C.uintptr_t(_swig_i_5))
 }
 
-func (arg1 SwigcptrAnnoyIndex) GetNnsByVector__SWIG_0(arg2 []float32, arg3 int, arg4 int, arg5 *[]int, arg6 *[]float32) {
+func (arg1 SwigcptrAnnoyIndex) GetNnsByVector__SWIG_0(arg2 []float32, arg3 int, arg4 int, arg5 X_RawAnnoyVectorInt, arg6 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	_swig_i_5 := arg6
-	C._wrap_AnnoyIndex_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), *(*C.swig_type_6)(unsafe.Pointer(&_swig_i_1)), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.swig_voidp(_swig_i_4), C.swig_voidp(_swig_i_5))
+	_swig_i_4 := arg5.Swigcptr()
+	_swig_i_5 := arg6.Swigcptr()
+	C._wrap_AnnoyIndex_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), *(*C.swig_type_6)(unsafe.Pointer(&_swig_i_1)), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.uintptr_t(_swig_i_4), C.uintptr_t(_swig_i_5))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
 }
 
-func (arg1 SwigcptrAnnoyIndex) GetNnsByItem__SWIG_1(arg2 int, arg3 int, arg4 int, arg5 *[]int) {
+func (arg1 SwigcptrAnnoyIndex) GetNnsByItem__SWIG_1(arg2 int, arg3 int, arg4 int, arg5 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndex_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndex_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.uintptr_t(_swig_i_4))
 }
 
 func (p SwigcptrAnnoyIndex) GetNnsByItem(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
 }
 
-func (arg1 SwigcptrAnnoyIndex) GetNnsByVector__SWIG_1(arg2 []float32, arg3 int, arg4 int, arg5 *[]int) {
+func (arg1 SwigcptrAnnoyIndex) GetNnsByVector__SWIG_1(arg2 []float32, arg3 int, arg4 int, arg5 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
 	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndex_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), *(*C.swig_type_7)(unsafe.Pointer(&_swig_i_1)), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndex_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), *(*C.swig_type_7)(unsafe.Pointer(&_swig_i_1)), C.swig_intgo(_swig_i_2), C.swig_intgo(_swig_i_3), C.uintptr_t(_swig_i_4))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -338,11 +536,11 @@ func (arg1 SwigcptrAnnoyIndex) GetNnsByVector__SWIG_1(arg2 []float32, arg3 int, 
 func (p SwigcptrAnnoyIndex) GetNnsByVector(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
@@ -351,28 +549,28 @@ func (p SwigcptrAnnoyIndex) GetNnsByVector(a ...interface{}) {
 func (arg1 SwigcptrAnnoyIndex) GetNItems() (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
-	swig_r = (int)(C._wrap_AnnoyIndex_getNItems_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0)))
+	swig_r = (int)(C._wrap_AnnoyIndex_getNItems_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0)))
 	return swig_r
 }
 
 func (arg1 SwigcptrAnnoyIndex) Verbose(arg2 bool) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_AnnoyIndex_verbose_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), C._Bool(_swig_i_1))
+	C._wrap_AnnoyIndex_verbose_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C._Bool(_swig_i_1))
 }
 
-func (arg1 SwigcptrAnnoyIndex) GetItem(arg2 int, arg3 *[]float32) {
+func (arg1 SwigcptrAnnoyIndex) GetItem(arg2 int, arg3 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	_swig_i_2 := arg3
-	C._wrap_AnnoyIndex_getItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_voidp(_swig_i_2))
+	_swig_i_2 := arg3.Swigcptr()
+	C._wrap_AnnoyIndex_getItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.uintptr_t(_swig_i_2))
 }
 
 func (arg1 SwigcptrAnnoyIndex) OnDiskBuild(arg2 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndex_onDiskBuild_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0), *(*C.swig_type_8)(unsafe.Pointer(&_swig_i_1))))
+	swig_r = (bool)(C._wrap_AnnoyIndex_onDiskBuild_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0), *(*C.swig_type_8)(unsafe.Pointer(&_swig_i_1))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -381,7 +579,7 @@ func (arg1 SwigcptrAnnoyIndex) OnDiskBuild(arg2 string) (_swig_ret bool) {
 
 func NewAnnoyIndex() (_swig_ret AnnoyIndex) {
 	var swig_r AnnoyIndex
-	swig_r = (AnnoyIndex)(SwigcptrAnnoyIndex(C._wrap_new_AnnoyIndex_annoyindex_2832eef9f6555f92()))
+	swig_r = (AnnoyIndex)(SwigcptrAnnoyIndex(C._wrap_new_AnnoyIndex_annoyindex_201a99b593aced55()))
 	return swig_r
 }
 
@@ -398,7 +596,7 @@ type AnnoyIndex interface {
 	GetNnsByVector(a ...interface{})
 	GetNItems() (_swig_ret int)
 	Verbose(arg2 bool)
-	GetItem(arg2 int, arg3 *[]float32)
+	GetItem(arg2 int, arg3 X_RawAnnoyVectorFloat)
 	OnDiskBuild(arg2 string) (_swig_ret bool)
 }
 
@@ -414,19 +612,19 @@ func (p SwigcptrAnnoyIndexAngular) SwigIsAnnoyIndexAngular() {
 func NewAnnoyIndexAngular(arg1 int) (_swig_ret AnnoyIndexAngular) {
 	var swig_r AnnoyIndexAngular
 	_swig_i_0 := arg1
-	swig_r = (AnnoyIndexAngular)(SwigcptrAnnoyIndexAngular(C._wrap_new_AnnoyIndexAngular_annoyindex_2832eef9f6555f92(C.swig_intgo(_swig_i_0))))
+	swig_r = (AnnoyIndexAngular)(SwigcptrAnnoyIndexAngular(C._wrap_new_AnnoyIndexAngular_annoyindex_201a99b593aced55(C.swig_intgo(_swig_i_0))))
 	return swig_r
 }
 
 func DeleteAnnoyIndexAngular(arg1 AnnoyIndexAngular) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_AnnoyIndexAngular_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_AnnoyIndexAngular_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexAngular) AddItem(arg1 int, arg2 []float32) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexAngular_addItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_AnnoyIndexAngular_addItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -434,14 +632,14 @@ func (_swig_base SwigcptrAnnoyIndexAngular) AddItem(arg1 int, arg2 []float32) {
 
 func (_swig_base SwigcptrAnnoyIndexAngular) Build(arg1 int) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexAngular_build_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
+	C._wrap_AnnoyIndexAngular_build_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexAngular) Save__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexAngular_save__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexAngular_save__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -451,7 +649,7 @@ func (_swig_base SwigcptrAnnoyIndexAngular) Save__SWIG_0(arg1 string, arg2 bool)
 func (_swig_base SwigcptrAnnoyIndexAngular) Save__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexAngular_save__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexAngular_save__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -470,14 +668,14 @@ func (p SwigcptrAnnoyIndexAngular) Save(a ...interface{}) bool {
 }
 
 func (_swig_base SwigcptrAnnoyIndexAngular) Unload() {
-	C._wrap_AnnoyIndexAngular_unload_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base))
+	C._wrap_AnnoyIndexAngular_unload_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base))
 }
 
 func (_swig_base SwigcptrAnnoyIndexAngular) Load__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexAngular_load__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexAngular_load__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -487,7 +685,7 @@ func (_swig_base SwigcptrAnnoyIndexAngular) Load__SWIG_0(arg1 string, arg2 bool)
 func (_swig_base SwigcptrAnnoyIndexAngular) Load__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexAngular_load__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexAngular_load__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -509,58 +707,58 @@ func (_swig_base SwigcptrAnnoyIndexAngular) GetDistance(arg1 int, arg2 int) (_sw
 	var swig_r float32
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (float32)(C._wrap_AnnoyIndexAngular_getDistance_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
+	swig_r = (float32)(C._wrap_AnnoyIndexAngular_getDistance_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
 	return swig_r
 }
 
-func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexAngular_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexAngular_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 }
 
-func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexAngular_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexAngular_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 }
 
 func (p SwigcptrAnnoyIndexAngular) GetNnsByItem(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
 }
 
-func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexAngular_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexAngular_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
 }
 
-func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexAngular_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexAngular_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -569,11 +767,11 @@ func (_swig_base SwigcptrAnnoyIndexAngular) GetNnsByVector__SWIG_1(arg1 []float3
 func (p SwigcptrAnnoyIndexAngular) GetNnsByVector(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
@@ -581,25 +779,25 @@ func (p SwigcptrAnnoyIndexAngular) GetNnsByVector(a ...interface{}) {
 
 func (_swig_base SwigcptrAnnoyIndexAngular) GetNItems() (_swig_ret int) {
 	var swig_r int
-	swig_r = (int)(C._wrap_AnnoyIndexAngular_getNItems_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base)))
+	swig_r = (int)(C._wrap_AnnoyIndexAngular_getNItems_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base)))
 	return swig_r
 }
 
 func (_swig_base SwigcptrAnnoyIndexAngular) Verbose(arg1 bool) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexAngular_verbose_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
+	C._wrap_AnnoyIndexAngular_verbose_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
 }
 
-func (_swig_base SwigcptrAnnoyIndexAngular) GetItem(arg1 int, arg2 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexAngular) GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
-	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexAngular_getItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_voidp(_swig_i_1))
+	_swig_i_1 := arg2.Swigcptr()
+	C._wrap_AnnoyIndexAngular_getItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.uintptr_t(_swig_i_1))
 }
 
 func (_swig_base SwigcptrAnnoyIndexAngular) OnDiskBuild(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexAngular_onDiskBuild_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexAngular_onDiskBuild_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -626,7 +824,7 @@ type AnnoyIndexAngular interface {
 	GetNnsByVector(a ...interface{})
 	GetNItems() (_swig_ret int)
 	Verbose(arg1 bool)
-	GetItem(arg1 int, arg2 *[]float32)
+	GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat)
 	OnDiskBuild(arg1 string) (_swig_ret bool)
 	SwigIsAnnoyIndex()
 	SwigGetAnnoyIndex() AnnoyIndex
@@ -644,19 +842,19 @@ func (p SwigcptrAnnoyIndexEuclidean) SwigIsAnnoyIndexEuclidean() {
 func NewAnnoyIndexEuclidean(arg1 int) (_swig_ret AnnoyIndexEuclidean) {
 	var swig_r AnnoyIndexEuclidean
 	_swig_i_0 := arg1
-	swig_r = (AnnoyIndexEuclidean)(SwigcptrAnnoyIndexEuclidean(C._wrap_new_AnnoyIndexEuclidean_annoyindex_2832eef9f6555f92(C.swig_intgo(_swig_i_0))))
+	swig_r = (AnnoyIndexEuclidean)(SwigcptrAnnoyIndexEuclidean(C._wrap_new_AnnoyIndexEuclidean_annoyindex_201a99b593aced55(C.swig_intgo(_swig_i_0))))
 	return swig_r
 }
 
 func DeleteAnnoyIndexEuclidean(arg1 AnnoyIndexEuclidean) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_AnnoyIndexEuclidean_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_AnnoyIndexEuclidean_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) AddItem(arg1 int, arg2 []float32) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexEuclidean_addItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_AnnoyIndexEuclidean_addItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -664,14 +862,14 @@ func (_swig_base SwigcptrAnnoyIndexEuclidean) AddItem(arg1 int, arg2 []float32) 
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) Build(arg1 int) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexEuclidean_build_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
+	C._wrap_AnnoyIndexEuclidean_build_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) Save__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_save__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_save__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -681,7 +879,7 @@ func (_swig_base SwigcptrAnnoyIndexEuclidean) Save__SWIG_0(arg1 string, arg2 boo
 func (_swig_base SwigcptrAnnoyIndexEuclidean) Save__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_save__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_save__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -700,14 +898,14 @@ func (p SwigcptrAnnoyIndexEuclidean) Save(a ...interface{}) bool {
 }
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) Unload() {
-	C._wrap_AnnoyIndexEuclidean_unload_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base))
+	C._wrap_AnnoyIndexEuclidean_unload_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base))
 }
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) Load__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_load__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_load__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -717,7 +915,7 @@ func (_swig_base SwigcptrAnnoyIndexEuclidean) Load__SWIG_0(arg1 string, arg2 boo
 func (_swig_base SwigcptrAnnoyIndexEuclidean) Load__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_load__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_load__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -739,58 +937,58 @@ func (_swig_base SwigcptrAnnoyIndexEuclidean) GetDistance(arg1 int, arg2 int) (_
 	var swig_r float32
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (float32)(C._wrap_AnnoyIndexEuclidean_getDistance_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
+	swig_r = (float32)(C._wrap_AnnoyIndexEuclidean_getDistance_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
 	return swig_r
 }
 
-func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 }
 
-func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 }
 
 func (p SwigcptrAnnoyIndexEuclidean) GetNnsByItem(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
 }
 
-func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
 }
 
-func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -799,11 +997,11 @@ func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNnsByVector__SWIG_1(arg1 []floa
 func (p SwigcptrAnnoyIndexEuclidean) GetNnsByVector(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
@@ -811,25 +1009,25 @@ func (p SwigcptrAnnoyIndexEuclidean) GetNnsByVector(a ...interface{}) {
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) GetNItems() (_swig_ret int) {
 	var swig_r int
-	swig_r = (int)(C._wrap_AnnoyIndexEuclidean_getNItems_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base)))
+	swig_r = (int)(C._wrap_AnnoyIndexEuclidean_getNItems_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base)))
 	return swig_r
 }
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) Verbose(arg1 bool) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexEuclidean_verbose_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
+	C._wrap_AnnoyIndexEuclidean_verbose_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
 }
 
-func (_swig_base SwigcptrAnnoyIndexEuclidean) GetItem(arg1 int, arg2 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexEuclidean) GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
-	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexEuclidean_getItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_voidp(_swig_i_1))
+	_swig_i_1 := arg2.Swigcptr()
+	C._wrap_AnnoyIndexEuclidean_getItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.uintptr_t(_swig_i_1))
 }
 
 func (_swig_base SwigcptrAnnoyIndexEuclidean) OnDiskBuild(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_onDiskBuild_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexEuclidean_onDiskBuild_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -856,7 +1054,7 @@ type AnnoyIndexEuclidean interface {
 	GetNnsByVector(a ...interface{})
 	GetNItems() (_swig_ret int)
 	Verbose(arg1 bool)
-	GetItem(arg1 int, arg2 *[]float32)
+	GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat)
 	OnDiskBuild(arg1 string) (_swig_ret bool)
 	SwigIsAnnoyIndex()
 	SwigGetAnnoyIndex() AnnoyIndex
@@ -874,19 +1072,19 @@ func (p SwigcptrAnnoyIndexManhattan) SwigIsAnnoyIndexManhattan() {
 func NewAnnoyIndexManhattan(arg1 int) (_swig_ret AnnoyIndexManhattan) {
 	var swig_r AnnoyIndexManhattan
 	_swig_i_0 := arg1
-	swig_r = (AnnoyIndexManhattan)(SwigcptrAnnoyIndexManhattan(C._wrap_new_AnnoyIndexManhattan_annoyindex_2832eef9f6555f92(C.swig_intgo(_swig_i_0))))
+	swig_r = (AnnoyIndexManhattan)(SwigcptrAnnoyIndexManhattan(C._wrap_new_AnnoyIndexManhattan_annoyindex_201a99b593aced55(C.swig_intgo(_swig_i_0))))
 	return swig_r
 }
 
 func DeleteAnnoyIndexManhattan(arg1 AnnoyIndexManhattan) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_AnnoyIndexManhattan_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_AnnoyIndexManhattan_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) AddItem(arg1 int, arg2 []float32) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexManhattan_addItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_AnnoyIndexManhattan_addItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -894,14 +1092,14 @@ func (_swig_base SwigcptrAnnoyIndexManhattan) AddItem(arg1 int, arg2 []float32) 
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) Build(arg1 int) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexManhattan_build_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
+	C._wrap_AnnoyIndexManhattan_build_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) Save__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_save__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_save__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -911,7 +1109,7 @@ func (_swig_base SwigcptrAnnoyIndexManhattan) Save__SWIG_0(arg1 string, arg2 boo
 func (_swig_base SwigcptrAnnoyIndexManhattan) Save__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_save__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_save__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -930,14 +1128,14 @@ func (p SwigcptrAnnoyIndexManhattan) Save(a ...interface{}) bool {
 }
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) Unload() {
-	C._wrap_AnnoyIndexManhattan_unload_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base))
+	C._wrap_AnnoyIndexManhattan_unload_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base))
 }
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) Load__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_load__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_load__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -947,7 +1145,7 @@ func (_swig_base SwigcptrAnnoyIndexManhattan) Load__SWIG_0(arg1 string, arg2 boo
 func (_swig_base SwigcptrAnnoyIndexManhattan) Load__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_load__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_load__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -969,58 +1167,58 @@ func (_swig_base SwigcptrAnnoyIndexManhattan) GetDistance(arg1 int, arg2 int) (_
 	var swig_r float32
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (float32)(C._wrap_AnnoyIndexManhattan_getDistance_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
+	swig_r = (float32)(C._wrap_AnnoyIndexManhattan_getDistance_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
 	return swig_r
 }
 
-func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 }
 
-func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 }
 
 func (p SwigcptrAnnoyIndexManhattan) GetNnsByItem(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
 }
 
-func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
 }
 
-func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1029,11 +1227,11 @@ func (_swig_base SwigcptrAnnoyIndexManhattan) GetNnsByVector__SWIG_1(arg1 []floa
 func (p SwigcptrAnnoyIndexManhattan) GetNnsByVector(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
@@ -1041,25 +1239,25 @@ func (p SwigcptrAnnoyIndexManhattan) GetNnsByVector(a ...interface{}) {
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) GetNItems() (_swig_ret int) {
 	var swig_r int
-	swig_r = (int)(C._wrap_AnnoyIndexManhattan_getNItems_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base)))
+	swig_r = (int)(C._wrap_AnnoyIndexManhattan_getNItems_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base)))
 	return swig_r
 }
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) Verbose(arg1 bool) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexManhattan_verbose_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
+	C._wrap_AnnoyIndexManhattan_verbose_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
 }
 
-func (_swig_base SwigcptrAnnoyIndexManhattan) GetItem(arg1 int, arg2 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexManhattan) GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
-	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexManhattan_getItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_voidp(_swig_i_1))
+	_swig_i_1 := arg2.Swigcptr()
+	C._wrap_AnnoyIndexManhattan_getItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.uintptr_t(_swig_i_1))
 }
 
 func (_swig_base SwigcptrAnnoyIndexManhattan) OnDiskBuild(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_onDiskBuild_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexManhattan_onDiskBuild_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1086,7 +1284,7 @@ type AnnoyIndexManhattan interface {
 	GetNnsByVector(a ...interface{})
 	GetNItems() (_swig_ret int)
 	Verbose(arg1 bool)
-	GetItem(arg1 int, arg2 *[]float32)
+	GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat)
 	OnDiskBuild(arg1 string) (_swig_ret bool)
 	SwigIsAnnoyIndex()
 	SwigGetAnnoyIndex() AnnoyIndex
@@ -1104,19 +1302,19 @@ func (p SwigcptrAnnoyIndexDotProduct) SwigIsAnnoyIndexDotProduct() {
 func NewAnnoyIndexDotProduct(arg1 int) (_swig_ret AnnoyIndexDotProduct) {
 	var swig_r AnnoyIndexDotProduct
 	_swig_i_0 := arg1
-	swig_r = (AnnoyIndexDotProduct)(SwigcptrAnnoyIndexDotProduct(C._wrap_new_AnnoyIndexDotProduct_annoyindex_2832eef9f6555f92(C.swig_intgo(_swig_i_0))))
+	swig_r = (AnnoyIndexDotProduct)(SwigcptrAnnoyIndexDotProduct(C._wrap_new_AnnoyIndexDotProduct_annoyindex_201a99b593aced55(C.swig_intgo(_swig_i_0))))
 	return swig_r
 }
 
 func DeleteAnnoyIndexDotProduct(arg1 AnnoyIndexDotProduct) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_AnnoyIndexDotProduct_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_AnnoyIndexDotProduct_annoyindex_201a99b593aced55(C.uintptr_t(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) AddItem(arg1 int, arg2 []float32) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexDotProduct_addItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_AnnoyIndexDotProduct_addItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), *(*C.swig_type_9)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -1124,14 +1322,14 @@ func (_swig_base SwigcptrAnnoyIndexDotProduct) AddItem(arg1 int, arg2 []float32)
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) Build(arg1 int) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexDotProduct_build_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
+	C._wrap_AnnoyIndexDotProduct_build_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0))
 }
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) Save__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_save__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_save__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_10)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1141,7 +1339,7 @@ func (_swig_base SwigcptrAnnoyIndexDotProduct) Save__SWIG_0(arg1 string, arg2 bo
 func (_swig_base SwigcptrAnnoyIndexDotProduct) Save__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_save__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_save__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_11)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1160,14 +1358,14 @@ func (p SwigcptrAnnoyIndexDotProduct) Save(a ...interface{}) bool {
 }
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) Unload() {
-	C._wrap_AnnoyIndexDotProduct_unload_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base))
+	C._wrap_AnnoyIndexDotProduct_unload_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base))
 }
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) Load__SWIG_0(arg1 string, arg2 bool) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_load__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
+	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_load__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_12)(unsafe.Pointer(&_swig_i_0)), C._Bool(_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1177,7 +1375,7 @@ func (_swig_base SwigcptrAnnoyIndexDotProduct) Load__SWIG_0(arg1 string, arg2 bo
 func (_swig_base SwigcptrAnnoyIndexDotProduct) Load__SWIG_1(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_load__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_load__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_13)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1199,58 +1397,58 @@ func (_swig_base SwigcptrAnnoyIndexDotProduct) GetDistance(arg1 int, arg2 int) (
 	var swig_r float32
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (float32)(C._wrap_AnnoyIndexDotProduct_getDistance_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
+	swig_r = (float32)(C._wrap_AnnoyIndexDotProduct_getDistance_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1)))
 	return swig_r
 }
 
-func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByItem__SWIG_0(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 }
 
-func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByItem__SWIG_1(arg1 int, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 }
 
 func (p SwigcptrAnnoyIndexDotProduct) GetNnsByItem(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByItem__SWIG_1(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByItem__SWIG_0(a[0].(int), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
 }
 
-func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 *[]int, arg5 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByVector__SWIG_0(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt, arg5 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	_swig_i_4 := arg5
-	C._wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3), C.swig_voidp(_swig_i_4))
+	_swig_i_3 := arg4.Swigcptr()
+	_swig_i_4 := arg5.Swigcptr()
+	C._wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_14)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3), C.uintptr_t(_swig_i_4))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
 }
 
-func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 *[]int) {
+func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByVector__SWIG_1(arg1 []float32, arg2 int, arg3 int, arg4 X_RawAnnoyVectorInt) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3
-	_swig_i_3 := arg4
-	C._wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.swig_voidp(_swig_i_3))
+	_swig_i_3 := arg4.Swigcptr()
+	C._wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_15)(unsafe.Pointer(&_swig_i_0)), C.swig_intgo(_swig_i_1), C.swig_intgo(_swig_i_2), C.uintptr_t(_swig_i_3))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1259,11 +1457,11 @@ func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNnsByVector__SWIG_1(arg1 []flo
 func (p SwigcptrAnnoyIndexDotProduct) GetNnsByVector(a ...interface{}) {
 	argc := len(a)
 	if argc == 4 {
-		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int))
+		p.GetNnsByVector__SWIG_1(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt))
 		return
 	}
 	if argc == 5 {
-		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(*[]int), a[4].(*[]float32))
+		p.GetNnsByVector__SWIG_0(a[0].([]float32), a[1].(int), a[2].(int), a[3].(X_RawAnnoyVectorInt), a[4].(X_RawAnnoyVectorFloat))
 		return
 	}
 	panic("No match for overloaded function call")
@@ -1271,25 +1469,25 @@ func (p SwigcptrAnnoyIndexDotProduct) GetNnsByVector(a ...interface{}) {
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) GetNItems() (_swig_ret int) {
 	var swig_r int
-	swig_r = (int)(C._wrap_AnnoyIndexDotProduct_getNItems_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base)))
+	swig_r = (int)(C._wrap_AnnoyIndexDotProduct_getNItems_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base)))
 	return swig_r
 }
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) Verbose(arg1 bool) {
 	_swig_i_0 := arg1
-	C._wrap_AnnoyIndexDotProduct_verbose_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
+	C._wrap_AnnoyIndexDotProduct_verbose_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C._Bool(_swig_i_0))
 }
 
-func (_swig_base SwigcptrAnnoyIndexDotProduct) GetItem(arg1 int, arg2 *[]float32) {
+func (_swig_base SwigcptrAnnoyIndexDotProduct) GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat) {
 	_swig_i_0 := arg1
-	_swig_i_1 := arg2
-	C._wrap_AnnoyIndexDotProduct_getItem_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.swig_voidp(_swig_i_1))
+	_swig_i_1 := arg2.Swigcptr()
+	C._wrap_AnnoyIndexDotProduct_getItem_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), C.swig_intgo(_swig_i_0), C.uintptr_t(_swig_i_1))
 }
 
 func (_swig_base SwigcptrAnnoyIndexDotProduct) OnDiskBuild(arg1 string) (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_onDiskBuild_annoyindex_2832eef9f6555f92(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
+	swig_r = (bool)(C._wrap_AnnoyIndexDotProduct_onDiskBuild_annoyindex_201a99b593aced55(C.uintptr_t(_swig_base), *(*C.swig_type_16)(unsafe.Pointer(&_swig_i_0))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -1316,7 +1514,7 @@ type AnnoyIndexDotProduct interface {
 	GetNnsByVector(a ...interface{})
 	GetNItems() (_swig_ret int)
 	Verbose(arg1 bool)
-	GetItem(arg1 int, arg2 *[]float32)
+	GetItem(arg1 int, arg2 X_RawAnnoyVectorFloat)
 	OnDiskBuild(arg1 string) (_swig_ret bool)
 	SwigIsAnnoyIndex()
 	SwigGetAnnoyIndex() AnnoyIndex

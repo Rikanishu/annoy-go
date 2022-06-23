@@ -12,10 +12,11 @@
 # the License.
 */
 
-package annoy
+package annoyindex
 
 import (
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 	"math"
 	"math/rand"
@@ -123,15 +124,17 @@ func (suite *AnnoyTestSuite) TestOnDiskBuild() {
 	index.Unload()
 	index.Load("go_test.ann")
 
-	var result []int
-	index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, &result)
-	assert.Equal(suite.T(), []int{2, 1, 0}, result)
+	result := NewAnnoyVectorInt()
+	defer result.Free()
 
-	index.GetNnsByVector([]float32{1, 2, 3}, 3, -1, &result)
-	assert.Equal(suite.T(), []int{0, 1, 2}, result)
+	index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
+	assert.Equal(suite.T(), []int32{2, 1, 0}, result.ToSlice())
 
-	index.GetNnsByVector([]float32{2, 0, 1}, 3, -1, &result)
-	assert.Equal(suite.T(), []int{2, 0, 1}, result)
+	index.GetNnsByVector([]float32{1, 2, 3}, 3, -1, result)
+	assert.Equal(suite.T(), []int32{0, 1, 2}, result.ToSlice())
+
+	index.GetNnsByVector([]float32{2, 0, 1}, 3, -1, result)
+	assert.Equal(suite.T(), []int32{2, 0, 1}, result.ToSlice())
 
 	DeleteAnnoyIndexAngular(index)
 
@@ -145,15 +148,17 @@ func (suite *AnnoyTestSuite) TestGetNnsByVector() {
 	index.AddItem(2, []float32{1, 0, 0})
 	index.Build(10)
 
-	var result []int
-	index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, &result)
-	assert.Equal(suite.T(), []int{2, 1, 0}, result)
+	result := NewAnnoyVectorInt()
+	defer result.Free()
 
-	index.GetNnsByVector([]float32{1, 2, 3}, 3, -1, &result)
-	assert.Equal(suite.T(), []int{0, 1, 2}, result)
+	index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
+	assert.Equal(suite.T(), []int32{2, 1, 0}, result.ToSlice())
 
-	index.GetNnsByVector([]float32{2, 0, 1}, 3, -1, &result)
-	assert.Equal(suite.T(), []int{2, 0, 1}, result)
+	index.GetNnsByVector([]float32{1, 2, 3}, 3, -1, result)
+	assert.Equal(suite.T(), []int32{0, 1, 2}, result.ToSlice())
+
+	index.GetNnsByVector([]float32{2, 0, 1}, 3, -1, result)
+	assert.Equal(suite.T(), []int32{2, 0, 1}, result.ToSlice())
 
 	DeleteAnnoyIndexAngular(index)
 }
@@ -165,12 +170,14 @@ func (suite *AnnoyTestSuite) TestGetNnsByItem() {
 	index.AddItem(2, []float32{0, 0, 1})
 	index.Build(10)
 
-	var result []int
-	index.GetNnsByItem(0, 3, -1, &result)
-	assert.Equal(suite.T(), []int{0, 1, 2}, result)
+	var result = NewAnnoyVectorInt()
+	defer result.Free()
 
-	index.GetNnsByItem(1, 3, -1, &result)
-	assert.Equal(suite.T(), []int{1, 0, 2}, result)
+	index.GetNnsByItem(0, 3, -1, result)
+	assert.Equal(suite.T(), []int32{0, 1, 2}, result.ToSlice())
+
+	index.GetNnsByItem(1, 3, -1, result)
+	assert.Equal(suite.T(), []int32{1, 0, 2}, result.ToSlice())
 
 	DeleteAnnoyIndexAngular(index)
 }
@@ -182,16 +189,17 @@ func (suite *AnnoyTestSuite) TestGetItem() {
 	index.AddItem(2, []float32{0, 0, 1})
 	index.Build(10)
 
-	var result []float32
+	var result = NewAnnoyVectorFloat()
+	defer result.Free()
 
-	index.GetItem(0, &result)
-	assert.Equal(suite.T(), []float32{2, 1, 0}, result)
+	index.GetItem(0, result)
+	assert.Equal(suite.T(), []float32{2, 1, 0}, result.ToSlice())
 
-	index.GetItem(1, &result)
-	assert.Equal(suite.T(), []float32{1, 2, 0}, result)
+	index.GetItem(1, result)
+	assert.Equal(suite.T(), []float32{1, 2, 0}, result.ToSlice())
 
-	index.GetItem(2, &result)
-	assert.Equal(suite.T(), []float32{0, 0, 1}, result)
+	index.GetItem(2, result)
+	assert.Equal(suite.T(), []float32{0, 0, 1}, result.ToSlice())
 
 	DeleteAnnoyIndexAngular(index)
 }
@@ -239,14 +247,15 @@ func (suite *AnnoyTestSuite) TestLargeEuclideanIndex() {
 		index.AddItem(j+1, y)
 	}
 	index.Build(10)
+	result := NewAnnoyVectorInt()
+	defer result.Free()
 	for j := 0; j < 10000; j += 2 {
-		var result []int
-		index.GetNnsByItem(j, 2, -1, &result)
+		index.GetNnsByItem(j, 2, -1, result)
 
-		assert.Equal(suite.T(), result, []int{j, j + 1})
+		require.Equal(suite.T(), result.ToSlice(), []int32{int32(j), int32(j + 1)})
 
-		index.GetNnsByItem(j+1, 2, -1, &result)
-		assert.Equal(suite.T(), result, []int{j + 1, j})
+		index.GetNnsByItem(j+1, 2, -1, result)
+		require.Equal(suite.T(), result.ToSlice(), []int32{int32(j) + 1, int32(j)})
 	}
 	DeleteAnnoyIndexEuclidean(index)
 }

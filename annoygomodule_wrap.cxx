@@ -8,7 +8,7 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-// source: src/annoygomodule.i
+// source: ./annoygomodule.i
 
 #define SWIGMODULE annoyindex
 
@@ -246,7 +246,7 @@ static void* Swig_malloc(int c) {
 extern "C" {
 #endif
 
-void _wrap_Swig_free_annoyindex_2832eef9f6555f92(void *_swig_go_0) {
+void _wrap_Swig_free_annoyindex_201a99b593aced55(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -256,7 +256,7 @@ void _wrap_Swig_free_annoyindex_2832eef9f6555f92(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_annoyindex_2832eef9f6555f92(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_annoyindex_201a99b593aced55(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -269,7 +269,131 @@ void *_wrap_Swig_malloc_annoyindex_2832eef9f6555f92(intgo _swig_go_0) {
 }
 
 
-void _wrap_delete_AnnoyIndex_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0) {
+void _wrap_delete_X_RawAnnoyVectorFloat_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorFloat *_swig_go_0) {
+  GoAnnoy::AnnoyVectorFloat *arg1 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_0; 
+  
+  delete arg1;
+  
+}
+
+
+float *_wrap_X_RawAnnoyVectorFloat_ArrayPtr_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorFloat *_swig_go_0) {
+  GoAnnoy::AnnoyVectorFloat *arg1 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
+  float *result = 0 ;
+  float *_swig_go_result;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_0; 
+  
+  result = (float *)(arg1)->ArrayPtr();
+  *(float **)&_swig_go_result = (float *)result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_X_RawAnnoyVectorFloat_Len_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorFloat *_swig_go_0) {
+  GoAnnoy::AnnoyVectorFloat *arg1 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_0; 
+  
+  result = (int)(arg1)->Len();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+float _wrap_X_RawAnnoyVectorFloat_Get_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorFloat *_swig_go_0, intgo _swig_go_1) {
+  GoAnnoy::AnnoyVectorFloat *arg1 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
+  int arg2 ;
+  float result;
+  float _swig_go_result;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  
+  result = (float)(arg1)->Get(arg2);
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+GoAnnoy::AnnoyVectorFloat *_wrap_new_X_RawAnnoyVectorFloat_annoyindex_201a99b593aced55() {
+  GoAnnoy::AnnoyVectorFloat *result = 0 ;
+  GoAnnoy::AnnoyVectorFloat *_swig_go_result;
+  
+  
+  result = (GoAnnoy::AnnoyVectorFloat *)new GoAnnoy::AnnoyVectorFloat();
+  *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_result = (GoAnnoy::AnnoyVectorFloat *)result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_delete_X_RawAnnoyVectorInt_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorInt *_swig_go_0) {
+  GoAnnoy::AnnoyVectorInt *arg1 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_0; 
+  
+  delete arg1;
+  
+}
+
+
+int *_wrap_X_RawAnnoyVectorInt_ArrayPtr_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorInt *_swig_go_0) {
+  GoAnnoy::AnnoyVectorInt *arg1 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  int32_t *result = 0 ;
+  int *_swig_go_result;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_0; 
+  
+  result = (int32_t *)(arg1)->ArrayPtr();
+  *(int32_t **)&_swig_go_result = (int32_t *)result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_X_RawAnnoyVectorInt_Len_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorInt *_swig_go_0) {
+  GoAnnoy::AnnoyVectorInt *arg1 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_0; 
+  
+  result = (int)(arg1)->Len();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+int _wrap_X_RawAnnoyVectorInt_Get_annoyindex_201a99b593aced55(GoAnnoy::AnnoyVectorInt *_swig_go_0, intgo _swig_go_1) {
+  GoAnnoy::AnnoyVectorInt *arg1 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  int arg2 ;
+  int32_t result;
+  int _swig_go_result;
+  
+  arg1 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  
+  result = (arg1)->Get(arg2);
+  *(int32_t **)&_swig_go_result = new int32_t(result); 
+  return _swig_go_result;
+}
+
+
+GoAnnoy::AnnoyVectorInt *_wrap_new_X_RawAnnoyVectorInt_annoyindex_201a99b593aced55() {
+  GoAnnoy::AnnoyVectorInt *result = 0 ;
+  GoAnnoy::AnnoyVectorInt *_swig_go_result;
+  
+  
+  result = (GoAnnoy::AnnoyVectorInt *)new GoAnnoy::AnnoyVectorInt();
+  *(GoAnnoy::AnnoyVectorInt **)&_swig_go_result = (GoAnnoy::AnnoyVectorInt *)result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_delete_AnnoyIndex_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndex **)&_swig_go_0; 
@@ -279,7 +403,7 @@ void _wrap_delete_AnnoyIndex_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_s
 }
 
 
-void _wrap_AnnoyIndex_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
+void _wrap_AnnoyIndex_addItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   int arg2 ;
   float *arg3 = (float *) 0 ;
@@ -301,7 +425,7 @@ void _wrap_AnnoyIndex_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_
 }
 
 
-void _wrap_AnnoyIndex_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1) {
+void _wrap_AnnoyIndex_build_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   int arg2 ;
   
@@ -313,7 +437,7 @@ void _wrap_AnnoyIndex_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_sw
 }
 
 
-bool _wrap_AnnoyIndex_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndex_save__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -336,7 +460,7 @@ bool _wrap_AnnoyIndex_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyInd
 }
 
 
-bool _wrap_AnnoyIndex_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndex_save__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -357,7 +481,7 @@ bool _wrap_AnnoyIndex_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyInd
 }
 
 
-void _wrap_AnnoyIndex_unload_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0) {
+void _wrap_AnnoyIndex_unload_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndex **)&_swig_go_0; 
@@ -367,7 +491,7 @@ void _wrap_AnnoyIndex_unload_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_s
 }
 
 
-bool _wrap_AnnoyIndex_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndex_load__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -390,7 +514,7 @@ bool _wrap_AnnoyIndex_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyInd
 }
 
 
-bool _wrap_AnnoyIndex_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndex_load__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -411,7 +535,7 @@ bool _wrap_AnnoyIndex_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyInd
 }
 
 
-float _wrap_AnnoyIndex_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
+float _wrap_AnnoyIndex_getDistance_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   int arg2 ;
   int arg3 ;
@@ -428,63 +552,33 @@ float _wrap_AnnoyIndex_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyInd
 }
 
 
-void _wrap_AnnoyIndex_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndex_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndex **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   (arg1)->getNnsByItem(arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndex_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndex_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndex **)&_swig_go_0; 
   
@@ -498,83 +592,38 @@ void _wrap_AnnoyIndex_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   (arg1)->getNnsByVector((float const *)arg2,arg3,arg4,arg5,arg6);
-  
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
   
 }
 
 
-void _wrap_AnnoyIndex_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndex_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndex **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   (arg1)->getNnsByItem(arg2,arg3,arg4,arg5);
-  
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
   
 }
 
 
-void _wrap_AnnoyIndex_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndex_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndex **)&_swig_go_0; 
   
@@ -588,29 +637,14 @@ void _wrap_AnnoyIndex_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   (arg1)->getNnsByVector((float const *)arg2,arg3,arg4,arg5);
-  
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
   
 }
 
 
-intgo _wrap_AnnoyIndex_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0) {
+intgo _wrap_AnnoyIndex_getNItems_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -623,7 +657,7 @@ intgo _wrap_AnnoyIndex_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex
 }
 
 
-void _wrap_AnnoyIndex_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, bool _swig_go_1) {
+void _wrap_AnnoyIndex_verbose_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, bool _swig_go_1) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   bool arg2 ;
   
@@ -635,36 +669,21 @@ void _wrap_AnnoyIndex_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_
 }
 
 
-void _wrap_AnnoyIndex_getItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, _goslice_* _swig_go_2) {
+void _wrap_AnnoyIndex_getItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, intgo _swig_go_1, GoAnnoy::AnnoyVectorFloat *_swig_go_2) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   int arg2 ;
-  vector< float > *arg3 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg3 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndex **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
-  
-  arg3 = new vector<float>();
-  
+  arg3 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_2; 
   
   (arg1)->getItem(arg2,arg3);
-  
-  
-  {
-    _swig_go_2->len = arg3->size();
-    _swig_go_2->cap = arg3->size();
-    _swig_go_2->array = malloc(_swig_go_2->len * sizeof(float));
-    for (int i = 0; i < arg3->size(); i++) {
-      ((float *)_swig_go_2->array)[i] = (float)(*arg3)[i];
-    }
-  }
-  
-  
-  delete arg3;
   
 }
 
 
-bool _wrap_AnnoyIndex_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndex_onDiskBuild_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndex *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndex *arg1 = (GoAnnoy::AnnoyIndex *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -685,7 +704,7 @@ bool _wrap_AnnoyIndex_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyInde
 }
 
 
-GoAnnoy::AnnoyIndex *_wrap_new_AnnoyIndex_annoyindex_2832eef9f6555f92() {
+GoAnnoy::AnnoyIndex *_wrap_new_AnnoyIndex_annoyindex_201a99b593aced55() {
   GoAnnoy::AnnoyIndex *result = 0 ;
   GoAnnoy::AnnoyIndex *_swig_go_result;
   
@@ -696,7 +715,7 @@ GoAnnoy::AnnoyIndex *_wrap_new_AnnoyIndex_annoyindex_2832eef9f6555f92() {
 }
 
 
-GoAnnoy::AnnoyIndexAngular *_wrap_new_AnnoyIndexAngular_annoyindex_2832eef9f6555f92(intgo _swig_go_0) {
+GoAnnoy::AnnoyIndexAngular *_wrap_new_AnnoyIndexAngular_annoyindex_201a99b593aced55(intgo _swig_go_0) {
   int arg1 ;
   GoAnnoy::AnnoyIndexAngular *result = 0 ;
   GoAnnoy::AnnoyIndexAngular *_swig_go_result;
@@ -709,7 +728,7 @@ GoAnnoy::AnnoyIndexAngular *_wrap_new_AnnoyIndexAngular_annoyindex_2832eef9f6555
 }
 
 
-void _wrap_delete_AnnoyIndexAngular_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0) {
+void _wrap_delete_AnnoyIndexAngular_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexAngular **)&_swig_go_0; 
@@ -719,7 +738,7 @@ void _wrap_delete_AnnoyIndexAngular_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIn
 }
 
 
-void _wrap_AnnoyIndexAngular_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
+void _wrap_AnnoyIndexAngular_addItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   int arg2 ;
   float *arg3 = (float *) 0 ;
@@ -742,7 +761,7 @@ void _wrap_AnnoyIndexAngular_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyI
 }
 
 
-void _wrap_AnnoyIndexAngular_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1) {
+void _wrap_AnnoyIndexAngular_build_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   int arg2 ;
   
@@ -755,7 +774,7 @@ void _wrap_AnnoyIndexAngular_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyInd
 }
 
 
-bool _wrap_AnnoyIndexAngular_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexAngular_save__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -779,7 +798,7 @@ bool _wrap_AnnoyIndexAngular_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::A
 }
 
 
-bool _wrap_AnnoyIndexAngular_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexAngular_save__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -801,7 +820,7 @@ bool _wrap_AnnoyIndexAngular_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::A
 }
 
 
-void _wrap_AnnoyIndexAngular_unload_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0) {
+void _wrap_AnnoyIndexAngular_unload_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexAngular **)&_swig_go_0; 
@@ -812,7 +831,7 @@ void _wrap_AnnoyIndexAngular_unload_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIn
 }
 
 
-bool _wrap_AnnoyIndexAngular_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexAngular_load__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -836,7 +855,7 @@ bool _wrap_AnnoyIndexAngular_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::A
 }
 
 
-bool _wrap_AnnoyIndexAngular_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexAngular_load__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -858,7 +877,7 @@ bool _wrap_AnnoyIndexAngular_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::A
 }
 
 
-float _wrap_AnnoyIndexAngular_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
+float _wrap_AnnoyIndexAngular_getDistance_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   int arg2 ;
   int arg3 ;
@@ -876,98 +895,53 @@ float _wrap_AnnoyIndexAngular_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy::A
 }
 
 
-void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexAngular **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexAngular_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexAngular **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexAngular **)&_swig_go_0; 
   
@@ -981,51 +955,21 @@ void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexAngular **)&_swig_go_0; 
   
@@ -1039,30 +983,15 @@ void _wrap_AnnoyIndexAngular_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-intgo _wrap_AnnoyIndexAngular_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0) {
+intgo _wrap_AnnoyIndexAngular_getNItems_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -1076,7 +1005,7 @@ intgo _wrap_AnnoyIndexAngular_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::Ann
 }
 
 
-void _wrap_AnnoyIndexAngular_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, bool _swig_go_1) {
+void _wrap_AnnoyIndexAngular_verbose_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, bool _swig_go_1) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   bool arg2 ;
   
@@ -1089,37 +1018,22 @@ void _wrap_AnnoyIndexAngular_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyI
 }
 
 
-void _wrap_AnnoyIndexAngular_getItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, _goslice_* _swig_go_2) {
+void _wrap_AnnoyIndexAngular_getItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, intgo _swig_go_1, GoAnnoy::AnnoyVectorFloat *_swig_go_2) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   int arg2 ;
-  vector< float > *arg3 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg3 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexAngular **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
-  
-  arg3 = new vector<float>();
-  
+  arg3 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_2; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getItem(arg2,arg3);
   
-  
-  {
-    _swig_go_2->len = arg3->size();
-    _swig_go_2->cap = arg3->size();
-    _swig_go_2->array = malloc(_swig_go_2->len * sizeof(float));
-    for (int i = 0; i < arg3->size(); i++) {
-      ((float *)_swig_go_2->array)[i] = (float)(*arg3)[i];
-    }
-  }
-  
-  
-  delete arg3;
-  
 }
 
 
-bool _wrap_AnnoyIndexAngular_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexAngular_onDiskBuild_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexAngular *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexAngular *arg1 = (GoAnnoy::AnnoyIndexAngular *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -1141,7 +1055,7 @@ bool _wrap_AnnoyIndexAngular_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::An
 }
 
 
-GoAnnoy::AnnoyIndexEuclidean *_wrap_new_AnnoyIndexEuclidean_annoyindex_2832eef9f6555f92(intgo _swig_go_0) {
+GoAnnoy::AnnoyIndexEuclidean *_wrap_new_AnnoyIndexEuclidean_annoyindex_201a99b593aced55(intgo _swig_go_0) {
   int arg1 ;
   GoAnnoy::AnnoyIndexEuclidean *result = 0 ;
   GoAnnoy::AnnoyIndexEuclidean *_swig_go_result;
@@ -1154,7 +1068,7 @@ GoAnnoy::AnnoyIndexEuclidean *_wrap_new_AnnoyIndexEuclidean_annoyindex_2832eef9f
 }
 
 
-void _wrap_delete_AnnoyIndexEuclidean_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0) {
+void _wrap_delete_AnnoyIndexEuclidean_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexEuclidean **)&_swig_go_0; 
@@ -1164,7 +1078,7 @@ void _wrap_delete_AnnoyIndexEuclidean_annoyindex_2832eef9f6555f92(GoAnnoy::Annoy
 }
 
 
-void _wrap_AnnoyIndexEuclidean_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
+void _wrap_AnnoyIndexEuclidean_addItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   int arg2 ;
   float *arg3 = (float *) 0 ;
@@ -1187,7 +1101,7 @@ void _wrap_AnnoyIndexEuclidean_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::Anno
 }
 
 
-void _wrap_AnnoyIndexEuclidean_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1) {
+void _wrap_AnnoyIndexEuclidean_build_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   int arg2 ;
   
@@ -1200,7 +1114,7 @@ void _wrap_AnnoyIndexEuclidean_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyI
 }
 
 
-bool _wrap_AnnoyIndexEuclidean_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexEuclidean_save__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -1224,7 +1138,7 @@ bool _wrap_AnnoyIndexEuclidean_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-bool _wrap_AnnoyIndexEuclidean_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexEuclidean_save__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -1246,7 +1160,7 @@ bool _wrap_AnnoyIndexEuclidean_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-void _wrap_AnnoyIndexEuclidean_unload_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0) {
+void _wrap_AnnoyIndexEuclidean_unload_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexEuclidean **)&_swig_go_0; 
@@ -1257,7 +1171,7 @@ void _wrap_AnnoyIndexEuclidean_unload_annoyindex_2832eef9f6555f92(GoAnnoy::Annoy
 }
 
 
-bool _wrap_AnnoyIndexEuclidean_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexEuclidean_load__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -1281,7 +1195,7 @@ bool _wrap_AnnoyIndexEuclidean_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-bool _wrap_AnnoyIndexEuclidean_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexEuclidean_load__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -1303,7 +1217,7 @@ bool _wrap_AnnoyIndexEuclidean_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-float _wrap_AnnoyIndexEuclidean_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
+float _wrap_AnnoyIndexEuclidean_getDistance_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   int arg2 ;
   int arg3 ;
@@ -1321,98 +1235,53 @@ float _wrap_AnnoyIndexEuclidean_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexEuclidean **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexEuclidean_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexEuclidean **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexEuclidean **)&_swig_go_0; 
   
@@ -1426,51 +1295,21 @@ void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f9
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexEuclidean **)&_swig_go_0; 
   
@@ -1484,30 +1323,15 @@ void _wrap_AnnoyIndexEuclidean_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f9
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-intgo _wrap_AnnoyIndexEuclidean_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0) {
+intgo _wrap_AnnoyIndexEuclidean_getNItems_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -1521,7 +1345,7 @@ intgo _wrap_AnnoyIndexEuclidean_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::A
 }
 
 
-void _wrap_AnnoyIndexEuclidean_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, bool _swig_go_1) {
+void _wrap_AnnoyIndexEuclidean_verbose_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, bool _swig_go_1) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   bool arg2 ;
   
@@ -1534,37 +1358,22 @@ void _wrap_AnnoyIndexEuclidean_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::Anno
 }
 
 
-void _wrap_AnnoyIndexEuclidean_getItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, _goslice_* _swig_go_2) {
+void _wrap_AnnoyIndexEuclidean_getItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, intgo _swig_go_1, GoAnnoy::AnnoyVectorFloat *_swig_go_2) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   int arg2 ;
-  vector< float > *arg3 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg3 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexEuclidean **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
-  
-  arg3 = new vector<float>();
-  
+  arg3 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_2; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getItem(arg2,arg3);
   
-  
-  {
-    _swig_go_2->len = arg3->size();
-    _swig_go_2->cap = arg3->size();
-    _swig_go_2->array = malloc(_swig_go_2->len * sizeof(float));
-    for (int i = 0; i < arg3->size(); i++) {
-      ((float *)_swig_go_2->array)[i] = (float)(*arg3)[i];
-    }
-  }
-  
-  
-  delete arg3;
-  
 }
 
 
-bool _wrap_AnnoyIndexEuclidean_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexEuclidean_onDiskBuild_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexEuclidean *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexEuclidean *arg1 = (GoAnnoy::AnnoyIndexEuclidean *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -1586,7 +1395,7 @@ bool _wrap_AnnoyIndexEuclidean_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::
 }
 
 
-GoAnnoy::AnnoyIndexManhattan *_wrap_new_AnnoyIndexManhattan_annoyindex_2832eef9f6555f92(intgo _swig_go_0) {
+GoAnnoy::AnnoyIndexManhattan *_wrap_new_AnnoyIndexManhattan_annoyindex_201a99b593aced55(intgo _swig_go_0) {
   int arg1 ;
   GoAnnoy::AnnoyIndexManhattan *result = 0 ;
   GoAnnoy::AnnoyIndexManhattan *_swig_go_result;
@@ -1599,7 +1408,7 @@ GoAnnoy::AnnoyIndexManhattan *_wrap_new_AnnoyIndexManhattan_annoyindex_2832eef9f
 }
 
 
-void _wrap_delete_AnnoyIndexManhattan_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0) {
+void _wrap_delete_AnnoyIndexManhattan_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexManhattan **)&_swig_go_0; 
@@ -1609,7 +1418,7 @@ void _wrap_delete_AnnoyIndexManhattan_annoyindex_2832eef9f6555f92(GoAnnoy::Annoy
 }
 
 
-void _wrap_AnnoyIndexManhattan_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
+void _wrap_AnnoyIndexManhattan_addItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   int arg2 ;
   float *arg3 = (float *) 0 ;
@@ -1632,7 +1441,7 @@ void _wrap_AnnoyIndexManhattan_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::Anno
 }
 
 
-void _wrap_AnnoyIndexManhattan_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1) {
+void _wrap_AnnoyIndexManhattan_build_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   int arg2 ;
   
@@ -1645,7 +1454,7 @@ void _wrap_AnnoyIndexManhattan_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyI
 }
 
 
-bool _wrap_AnnoyIndexManhattan_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexManhattan_save__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -1669,7 +1478,7 @@ bool _wrap_AnnoyIndexManhattan_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-bool _wrap_AnnoyIndexManhattan_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexManhattan_save__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -1691,7 +1500,7 @@ bool _wrap_AnnoyIndexManhattan_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-void _wrap_AnnoyIndexManhattan_unload_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0) {
+void _wrap_AnnoyIndexManhattan_unload_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexManhattan **)&_swig_go_0; 
@@ -1702,7 +1511,7 @@ void _wrap_AnnoyIndexManhattan_unload_annoyindex_2832eef9f6555f92(GoAnnoy::Annoy
 }
 
 
-bool _wrap_AnnoyIndexManhattan_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexManhattan_load__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -1726,7 +1535,7 @@ bool _wrap_AnnoyIndexManhattan_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-bool _wrap_AnnoyIndexManhattan_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexManhattan_load__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -1748,7 +1557,7 @@ bool _wrap_AnnoyIndexManhattan_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-float _wrap_AnnoyIndexManhattan_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
+float _wrap_AnnoyIndexManhattan_getDistance_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   int arg2 ;
   int arg3 ;
@@ -1766,98 +1575,53 @@ float _wrap_AnnoyIndexManhattan_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy:
 }
 
 
-void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexManhattan **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexManhattan_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexManhattan **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexManhattan **)&_swig_go_0; 
   
@@ -1871,51 +1635,21 @@ void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f9
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexManhattan **)&_swig_go_0; 
   
@@ -1929,30 +1663,15 @@ void _wrap_AnnoyIndexManhattan_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f9
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-intgo _wrap_AnnoyIndexManhattan_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0) {
+intgo _wrap_AnnoyIndexManhattan_getNItems_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -1966,7 +1685,7 @@ intgo _wrap_AnnoyIndexManhattan_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::A
 }
 
 
-void _wrap_AnnoyIndexManhattan_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, bool _swig_go_1) {
+void _wrap_AnnoyIndexManhattan_verbose_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, bool _swig_go_1) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   bool arg2 ;
   
@@ -1979,37 +1698,22 @@ void _wrap_AnnoyIndexManhattan_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::Anno
 }
 
 
-void _wrap_AnnoyIndexManhattan_getItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, _goslice_* _swig_go_2) {
+void _wrap_AnnoyIndexManhattan_getItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, intgo _swig_go_1, GoAnnoy::AnnoyVectorFloat *_swig_go_2) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   int arg2 ;
-  vector< float > *arg3 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg3 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexManhattan **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
-  
-  arg3 = new vector<float>();
-  
+  arg3 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_2; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getItem(arg2,arg3);
   
-  
-  {
-    _swig_go_2->len = arg3->size();
-    _swig_go_2->cap = arg3->size();
-    _swig_go_2->array = malloc(_swig_go_2->len * sizeof(float));
-    for (int i = 0; i < arg3->size(); i++) {
-      ((float *)_swig_go_2->array)[i] = (float)(*arg3)[i];
-    }
-  }
-  
-  
-  delete arg3;
-  
 }
 
 
-bool _wrap_AnnoyIndexManhattan_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexManhattan_onDiskBuild_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexManhattan *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexManhattan *arg1 = (GoAnnoy::AnnoyIndexManhattan *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -2031,7 +1735,7 @@ bool _wrap_AnnoyIndexManhattan_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::
 }
 
 
-GoAnnoy::AnnoyIndexDotProduct *_wrap_new_AnnoyIndexDotProduct_annoyindex_2832eef9f6555f92(intgo _swig_go_0) {
+GoAnnoy::AnnoyIndexDotProduct *_wrap_new_AnnoyIndexDotProduct_annoyindex_201a99b593aced55(intgo _swig_go_0) {
   int arg1 ;
   GoAnnoy::AnnoyIndexDotProduct *result = 0 ;
   GoAnnoy::AnnoyIndexDotProduct *_swig_go_result;
@@ -2044,7 +1748,7 @@ GoAnnoy::AnnoyIndexDotProduct *_wrap_new_AnnoyIndexDotProduct_annoyindex_2832eef
 }
 
 
-void _wrap_delete_AnnoyIndexDotProduct_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0) {
+void _wrap_delete_AnnoyIndexDotProduct_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexDotProduct **)&_swig_go_0; 
@@ -2054,7 +1758,7 @@ void _wrap_delete_AnnoyIndexDotProduct_annoyindex_2832eef9f6555f92(GoAnnoy::Anno
 }
 
 
-void _wrap_AnnoyIndexDotProduct_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
+void _wrap_AnnoyIndexDotProduct_addItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, _goslice_ _swig_go_2) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   int arg2 ;
   float *arg3 = (float *) 0 ;
@@ -2077,7 +1781,7 @@ void _wrap_AnnoyIndexDotProduct_addItem_annoyindex_2832eef9f6555f92(GoAnnoy::Ann
 }
 
 
-void _wrap_AnnoyIndexDotProduct_build_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1) {
+void _wrap_AnnoyIndexDotProduct_build_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   int arg2 ;
   
@@ -2090,7 +1794,7 @@ void _wrap_AnnoyIndexDotProduct_build_annoyindex_2832eef9f6555f92(GoAnnoy::Annoy
 }
 
 
-bool _wrap_AnnoyIndexDotProduct_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexDotProduct_save__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -2114,7 +1818,7 @@ bool _wrap_AnnoyIndexDotProduct_save__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy
 }
 
 
-bool _wrap_AnnoyIndexDotProduct_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexDotProduct_save__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -2136,7 +1840,7 @@ bool _wrap_AnnoyIndexDotProduct_save__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy
 }
 
 
-void _wrap_AnnoyIndexDotProduct_unload_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0) {
+void _wrap_AnnoyIndexDotProduct_unload_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexDotProduct **)&_swig_go_0; 
@@ -2147,7 +1851,7 @@ void _wrap_AnnoyIndexDotProduct_unload_annoyindex_2832eef9f6555f92(GoAnnoy::Anno
 }
 
 
-bool _wrap_AnnoyIndexDotProduct_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
+bool _wrap_AnnoyIndexDotProduct_load__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1, bool _swig_go_2) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   char *arg2 = (char *) 0 ;
   bool arg3 ;
@@ -2171,7 +1875,7 @@ bool _wrap_AnnoyIndexDotProduct_load__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy
 }
 
 
-bool _wrap_AnnoyIndexDotProduct_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexDotProduct_load__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
@@ -2193,7 +1897,7 @@ bool _wrap_AnnoyIndexDotProduct_load__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy
 }
 
 
-float _wrap_AnnoyIndexDotProduct_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
+float _wrap_AnnoyIndexDotProduct_getDistance_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   int arg2 ;
   int arg3 ;
@@ -2211,98 +1915,53 @@ float _wrap_AnnoyIndexDotProduct_getDistance_annoyindex_2832eef9f6555f92(GoAnnoy
 }
 
 
-void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexDotProduct **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexDotProduct_getNnsByItem__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexDotProduct **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByItem(arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4, _goslice_* _swig_go_5) {
+void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_0_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4, GoAnnoy::AnnoyVectorFloat *_swig_go_5) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
-  vector< float > *arg6 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg6 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexDotProduct **)&_swig_go_0; 
   
@@ -2316,51 +1975,21 @@ void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_0_annoyindex_2832eef9f6555f
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
-  
-  arg6 = new vector<float>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
+  arg6 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_5; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5,arg6);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  {
-    _swig_go_5->len = arg6->size();
-    _swig_go_5->cap = arg6->size();
-    _swig_go_5->array = malloc(_swig_go_5->len * sizeof(float));
-    for (int i = 0; i < arg6->size(); i++) {
-      ((float *)_swig_go_5->array)[i] = (float)(*arg6)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
-  
-  delete arg6;
-  
 }
 
 
-void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, _goslice_* _swig_go_4) {
+void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_1_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _goslice_ _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, GoAnnoy::AnnoyVectorInt *_swig_go_4) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   float *arg2 = (float *) 0 ;
   int arg3 ;
   int arg4 ;
-  vector< int32_t > *arg5 = (vector< int32_t > *) 0 ;
+  GoAnnoy::AnnoyVectorInt *arg5 = (GoAnnoy::AnnoyVectorInt *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexDotProduct **)&_swig_go_0; 
   
@@ -2374,30 +2003,15 @@ void _wrap_AnnoyIndexDotProduct_getNnsByVector__SWIG_1_annoyindex_2832eef9f6555f
   
   arg3 = (int)_swig_go_2; 
   arg4 = (int)_swig_go_3; 
-  
-  arg5 = new vector<int32_t>();
-  
+  arg5 = *(GoAnnoy::AnnoyVectorInt **)&_swig_go_4; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getNnsByVector((float const *)arg2,arg3,arg4,arg5);
   
-  
-  {
-    _swig_go_4->len = arg5->size();
-    _swig_go_4->cap = arg5->size();
-    _swig_go_4->array = malloc(_swig_go_4->len * sizeof(intgo));
-    for (int i = 0; i < arg5->size(); i++) {
-      ((intgo *)_swig_go_4->array)[i] = (intgo)(*arg5)[i];
-    }
-  }
-  
-  
-  delete arg5;
-  
 }
 
 
-intgo _wrap_AnnoyIndexDotProduct_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0) {
+intgo _wrap_AnnoyIndexDotProduct_getNItems_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -2411,7 +2025,7 @@ intgo _wrap_AnnoyIndexDotProduct_getNItems_annoyindex_2832eef9f6555f92(GoAnnoy::
 }
 
 
-void _wrap_AnnoyIndexDotProduct_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, bool _swig_go_1) {
+void _wrap_AnnoyIndexDotProduct_verbose_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, bool _swig_go_1) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   bool arg2 ;
   
@@ -2424,37 +2038,22 @@ void _wrap_AnnoyIndexDotProduct_verbose_annoyindex_2832eef9f6555f92(GoAnnoy::Ann
 }
 
 
-void _wrap_AnnoyIndexDotProduct_getItem_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, _goslice_* _swig_go_2) {
+void _wrap_AnnoyIndexDotProduct_getItem_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, intgo _swig_go_1, GoAnnoy::AnnoyVectorFloat *_swig_go_2) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   int arg2 ;
-  vector< float > *arg3 = (vector< float > *) 0 ;
+  GoAnnoy::AnnoyVectorFloat *arg3 = (GoAnnoy::AnnoyVectorFloat *) 0 ;
   
   arg1 = *(GoAnnoy::AnnoyIndexDotProduct **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
-  
-  arg3 = new vector<float>();
-  
+  arg3 = *(GoAnnoy::AnnoyVectorFloat **)&_swig_go_2; 
   
   GoAnnoy::AnnoyIndex *swig_b0 = (GoAnnoy::AnnoyIndex *)arg1;
   (swig_b0)->getItem(arg2,arg3);
   
-  
-  {
-    _swig_go_2->len = arg3->size();
-    _swig_go_2->cap = arg3->size();
-    _swig_go_2->array = malloc(_swig_go_2->len * sizeof(float));
-    for (int i = 0; i < arg3->size(); i++) {
-      ((float *)_swig_go_2->array)[i] = (float)(*arg3)[i];
-    }
-  }
-  
-  
-  delete arg3;
-  
 }
 
 
-bool _wrap_AnnoyIndexDotProduct_onDiskBuild_annoyindex_2832eef9f6555f92(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1) {
+bool _wrap_AnnoyIndexDotProduct_onDiskBuild_annoyindex_201a99b593aced55(GoAnnoy::AnnoyIndexDotProduct *_swig_go_0, _gostring_ _swig_go_1) {
   GoAnnoy::AnnoyIndexDotProduct *arg1 = (GoAnnoy::AnnoyIndexDotProduct *) 0 ;
   char *arg2 = (char *) 0 ;
   bool result;
