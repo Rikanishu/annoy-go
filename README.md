@@ -11,9 +11,9 @@ __Go code example__
 package main
 
 import (
-	    "github.com/Rikanishu/annoy-go"
-       "fmt"
-       "math/rand"
+    "github.com/Rikanishu/annoy-go"
+    "fmt"
+    "math/rand"
 )
 
 func main() {
