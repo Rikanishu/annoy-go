@@ -3,8 +3,14 @@
 
 This is a forked version with fixed memory leaks.
 
-* Please note, it changes the interface, new wrappers for vectors were added.
-* Do not reuse _AnnoyVectorInt_ / _AnnoyVectorFloat_ in different threads since it's not thread safe.
+* Please note, it changes the interface, new wrappers for results vectors were added: _AnnoyVectorInt_ / _AnnoyVectorFloat_.
+* Always call Free() methods in vector wrappers when you don't need them anymore.
+* You can make a copy of vector content to slice through methods Copy(inputSlice) or ToSlice(). Use first to copy values to already existed slice, or use the second one to create a copy from newly allocated slice.
+* Do not reuse them in different threads since it's not thread safe.
+* Input slices that are not modified were left the same.
+
+---
+
 * Also note that indexes will be kept as int32, so keep in mind there is a count limit for items.
 
 __Go code example__
