@@ -1,0 +1,26 @@
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+linters:
+  enable:
+    - errcheck
+    - structcheck
+    - varcheck
+    - ineffassign
+    - goimports
+    - golint
+    - govet
+    - goconst
+    - staticcheck
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  exclude:
+    - don't use underscores in Go names
+    - should have comment or be unexported
+    - should merge variable declaration with assignment on next line
+    - by other packages, and that stutters
+    - should be consistent with previous receiver name

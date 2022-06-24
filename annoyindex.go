@@ -150,9 +150,11 @@ extern _Bool _wrap_AnnoyIndexDotProduct_onDiskBuild_annoyindex_201a99b593aced55(
 */
 import "C"
 
-import "unsafe"
-import _ "runtime/cgo"
-import "sync"
+import (
+	_ "runtime/cgo"
+	"sync"
+	"unsafe"
+)
 
 type _ unsafe.Pointer
 

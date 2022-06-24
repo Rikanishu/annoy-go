@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/Rikanishu/annoy-go"
+	annoyindex "github.com/Rikanishu/annoy-go"
 )
 
 func main() {
