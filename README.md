@@ -6,7 +6,7 @@ This is a forked version with fixed memory leaks.
 * Please note, it changes the interface, new wrappers for results vectors were added: `AnnoyVectorInt` / `AnnoyVectorFloat`.
 * Always call `Free()` method in vector wrappers when you don't need them anymore. If you don't do that, you'll have memory leaks. I warned you.
 * You can make a copy of vector content to slice through methods `Copy(inputSlice)` or `ToSlice()`. Use the first to copy the values to already existed slice, or use the second method to create a copy to a new allocated one.
-* If you don't need to make an extra copy, you can use method `InnerArray()` to get it without copy.
+* If you want to avoid copying, you can use method `InnerArray()` to get the result slice without copying.
 * Never use the wrapper methods after `Free()` call, it can cause segmentation fault.
 * Do not reuse them in different threads since it's not thread safe.
 * Input slices which are not used to passing the result were left the same.

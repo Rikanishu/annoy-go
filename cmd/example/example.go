@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/Rikanishu/annoy-go"
 	"math/rand"
+
+	"github.com/Rikanishu/annoy-go"
 )
 
 func main() {

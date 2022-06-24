@@ -15,13 +15,14 @@
 package annoyindex
 
 import (
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-	"github.com/stretchr/testify/suite"
 	"math"
 	"math/rand"
 	"os"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/suite"
 )
 
 type AnnoyTestSuite struct {
@@ -142,23 +143,58 @@ func (suite *AnnoyTestSuite) TestOnDiskBuild() {
 }
 
 func (suite *AnnoyTestSuite) TestGetNnsByVector() {
+	t := suite.T()
 	index := NewAnnoyIndexAngular(3)
 	index.AddItem(0, []float32{0, 0, 1})
 	index.AddItem(1, []float32{0, 1, 0})
 	index.AddItem(2, []float32{1, 0, 0})
 	index.Build(10)
 
-	result := NewAnnoyVectorInt()
-	defer result.Free()
+	t.Run("regular", func(t *testing.T) {
+		result := NewAnnoyVectorInt()
+		defer result.Free()
 
-	index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
-	assert.Equal(suite.T(), []int32{2, 1, 0}, result.ToSlice())
+		index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
+		assert.Equal(t, []int32{2, 1, 0}, result.ToSlice())
 
-	index.GetNnsByVector([]float32{1, 2, 3}, 3, -1, result)
-	assert.Equal(suite.T(), []int32{0, 1, 2}, result.ToSlice())
+		index.GetNnsByVector([]float32{1, 2, 3}, 3, -1, result)
+		assert.Equal(t, []int32{0, 1, 2}, result.ToSlice())
 
-	index.GetNnsByVector([]float32{2, 0, 1}, 3, -1, result)
-	assert.Equal(suite.T(), []int32{2, 0, 1}, result.ToSlice())
+		index.GetNnsByVector([]float32{2, 0, 1}, 3, -1, result)
+		assert.Equal(t, []int32{2, 0, 1}, result.ToSlice())
+	})
+
+	t.Run("with copying", func(t *testing.T) {
+		result := NewAnnoyVectorInt()
+		defer result.Free()
+
+		var notAllocated []int32
+		index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
+		result.Copy(&notAllocated)
+		assert.Equal(t, []int32{2, 1, 0}, notAllocated)
+
+		// to make sure it will be overwritten
+		var alreadyAllocated = make([]int32, 10)
+		for i := 0; i < len(alreadyAllocated); i++ {
+			alreadyAllocated[i] = -1
+		}
+		index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
+		result.Copy(&alreadyAllocated)
+		assert.Equal(t, []int32{2, 1, 0}, alreadyAllocated)
+
+		var alreadyAllocatedCap = make([]int32, 0, 00)
+		index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
+		result.Copy(&alreadyAllocatedCap)
+		assert.Equal(t, []int32{2, 1, 0}, alreadyAllocatedCap)
+	})
+
+	t.Run("with inner array", func(t *testing.T) {
+		result := NewAnnoyVectorInt()
+		defer result.Free()
+
+		index.GetNnsByVector([]float32{3, 2, 1}, 3, -1, result)
+		assert.Equal(t, []int32{2, 1, 0}, result.InnerArray())
+	})
 
 	DeleteAnnoyIndexAngular(index)
 }

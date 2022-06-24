@@ -1,10 +1,11 @@
 package main
 
 import (
-	annoy "github.com/Rikanishu/annoy-go"
-	"github.com/Rikanishu/annoy-go/utils"
 	"math/rand"
 	"os"
+
+	annoy "github.com/Rikanishu/annoy-go"
+	"github.com/Rikanishu/annoy-go/utils"
 )
 
 func main() {
